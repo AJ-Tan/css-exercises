@@ -8,7 +8,7 @@ img {
 }
 
 .title {
-  font-size: 36px;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 
@@ -23,4 +23,31 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+/* Solution */
+ul {
+  padding: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding-inline: 1rem;
+}
+
+.plants-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 52px;
+
+  list-style-type: none;
+
+  & li {
+    max-width: 200px;
+    text-align: center;
+  }
 }
