@@ -4,13 +4,13 @@ body {
   min-height: 100vh;
 }
 
-.header {
+header {
   height: 72px;
   background: darkmagenta;
   color: white;
 }
 
-.footer {
+footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
@@ -26,4 +26,67 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* Solution */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+body, header, main, footer, .sidebar ul, .card-list {
+  display: flex;
+}
+
+body, .sidebar ul {
+  flex-direction: column;
+}
+
+header {
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+main {
+  flex: 1;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+  padding: 1rem;
+
+  ul {
+    gap: 1rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+
+.card-list {
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 3rem;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 3rem;
+  max-width: 25rem;
+}
+
+footer {
+  align-items: center;
+  justify-content: center;
 }
