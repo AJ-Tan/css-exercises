@@ -82,8 +82,8 @@ main {
 
 .card {
   box-sizing: border-box;
-  padding: 3rem;
-  max-width: 25rem;
+  padding: 1rem;
+  max-width: 20rem;
 }
 
 footer {
